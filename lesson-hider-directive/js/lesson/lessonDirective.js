@@ -4,7 +4,8 @@ angular.module("lessonHider")
             templateUrl: "js/lesson/lessonTmpl.html",
             restrict: 'E',
             scope: {
-                lesson: "="
+                lesson: "=",
+                dayAlert: "&"
                 // twoWayDataBinding: '=',
                 // stringBinding: '@',
                 // functionBinding: '&'
@@ -15,14 +16,13 @@ angular.module("lessonHider")
             link: function (scope, element, attributes) {
                 scope.getSchedule.then(function (response) {
                     scope.schedule = response.data;
-                    // console.log(scope.schedule.length);
-                        for (var i = 0; i < scope.schedule.length; i++) {
-                            // console.log(scope.lesson);
-                            if (scope.schedule[i].lesson === scope.lesson) {
-                                console.log(scope.lesson);
-                                element.css('text-decoration', 'line-through');
-                            }
+                    for (var i = 0; i < scope.schedule.length; i++) {
+                        if (scope.schedule[i].lesson === scope.lesson) {
+                            scope.lessonDay = scope.schedule[i].weekday;
+                            element.css('text-decoration', 'line-through');
+                            return;
                         }
+                    }
                 });
             }
         }

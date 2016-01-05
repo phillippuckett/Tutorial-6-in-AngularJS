@@ -13,4 +13,8 @@ angular.module("lessonHider")
             'Express',
             'Mongo'
         ];
+
+        $scope.announceDay = function (lesson, day) {
+            alert(lesson + ' is active on ' + day + '.');
+        }
     });
