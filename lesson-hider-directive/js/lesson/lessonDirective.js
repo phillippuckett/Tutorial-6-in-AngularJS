@@ -3,6 +3,12 @@ angular.module("lessonHider")
         return {
             templateUrl: "js/lesson/lessonTmpl.html",
             restrict: 'E',
+            scope: {
+                lesson: "="
+                // twoWayDataBinding: '=',
+                // stringBinding: '@',
+                // functionBinding: '&'
+            },
             link: function (scope, element, attributes) {
                 // console.log(scope, element, attributes);
             }

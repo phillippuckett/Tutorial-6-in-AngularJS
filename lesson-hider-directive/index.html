@@ -10,10 +10,10 @@
 </head>
 
 <body ng-controller="lessonCtrl">
-    {{test}}
-    
+   <div> {{test}} </div>
+
     <!--DIRECTIVES-->
-    <lesson-directive></lesson-directive>
+    <lesson-directive lesson="test" ng-model="lesson"></lesson-directive>
     <!--<lesson-directive my-test="Hello there!"></lesson-directive>-->
 
     <!--SCRIPT/LIBRARIES-->
