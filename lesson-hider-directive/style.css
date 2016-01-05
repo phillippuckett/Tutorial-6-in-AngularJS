@@ -1,0 +1,17 @@
+html,
+body {
+    /*block*/
+    background-color: lightslategrey;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px; 
+   position: absolute;
+   margin: auto;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   /*text*/
+   color: black;
+   text-align: center;
+}
