@@ -14,10 +14,8 @@ body {
    left: 0;
    /*text*/
    color: white;
-   text-align: center;
 }
 
 .lessonTmpl {
     color: lightslategray;
 }
-
