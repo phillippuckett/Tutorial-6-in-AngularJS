@@ -13,7 +13,9 @@
    <div> {{test}} </div>
 
     <!--DIRECTIVES-->
-    <lesson-directive lesson="test" ng-model="lesson"></lesson-directive>
+    <ul>
+    <lesson-directive ng-repeat="lesson in lessons" lesson="lesson"></lesson-directive>
+</ul>
     <!--<lesson-directive my-test="Hello there!"></lesson-directive>-->
 
     <!--SCRIPT/LIBRARIES-->

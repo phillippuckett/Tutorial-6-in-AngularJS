@@ -3,6 +3,9 @@ angular.module("lessonHider")
         return {
             templateUrl: "js/lesson/lessonTmpl.html",
             restrict: 'E',
+            controller: function ($scope, lessonService) {
+                $scope.getSchedule = lessonService.getSchedule();
+            },
             scope: {
                 lesson: "="
                 // twoWayDataBinding: '=',
