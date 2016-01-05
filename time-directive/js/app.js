@@ -1,1 +1,1 @@
-var app = angular.module('time-directive', []);
+var app = angular.module('timeApp', []);
