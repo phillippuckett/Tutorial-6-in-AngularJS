@@ -1,17 +1,23 @@
 html,
 body {
     /*block*/
-    background-color: lightslategrey;
-    border: 1px solid black;
+    background-color: darkslategray;
+    border: 1px solid lightslategray;
     height: 400px;
     width: 400px; 
    position: absolute;
+   padding: 5%;
    margin: auto;
    top: 0;
    right: 0;
    bottom: 0;
    left: 0;
    /*text*/
-   color: black;
+   color: white;
    text-align: center;
 }
+
+.lessonTmpl {
+    color: lightslategray;
+}
+
